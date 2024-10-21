@@ -1,0 +1,69 @@
+:root {
+    /* Primary Colors */
+    --primary-background-color: black;
+    --primary-text-color: white;
+  
+    /* Secondary Colors */
+    --secondary-background-color: white;
+    --secondary-text-color: black;
+  }
+  
+
+.orline{
+    border-color: rgb(54, 54, 54);
+    
+}
+.google{
+    border-radius: 50%;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    left: 0;
+    top: 2.2px;
+}
+.apple{
+    border-radius: 100%;
+}
+.s1{
+    width: 25%;
+    max-width: 25%;
+}
+.sub-btn{
+    height: 2rem;
+}
+.trending{
+    height: 200vh;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+  
+.no-scrollbar {
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+}
+.s2h{
+    height: 255vh;
+}
+  
+.fyouu .hidden {
+    display: none;
+}
+
+.expand{
+    height: 95vh !important;
+}
+
+.contract{
+    height: 15vh;
+    transition: 0.5s;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.4s ease;
+    background-color: gray;
+  }
+

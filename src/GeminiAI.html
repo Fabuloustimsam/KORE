@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X.com It's what is happening</title>
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="hamburger.js">
+</head>
+<body>
+    <section class="bg-black h-screen w-screen">
+        <div class="fatherDiv h-screen overflow-y-hidden flex">
+            <div id="Gs1Section" class="s1 overflow-y-hidden max-md:hidden h-full w-full max-md:bg-slate-900 max-md:max-w-max border z-40 max-md:absolute border-white divide-solid">
+                <div class="iconsNtexts flex flex-col gap-5 ml-14">
+                    <div class="flex text-white  w-full justify-between pr-2 pt-2  font-semibold ">
+                        <h1 class="text-2xl">KORE</h1>
+                        <div onclick="GcloseToggle()" class="border rounded-full hidden max-md:block border-white cursor-pointer">close</div>
+
+                        
+                    </div>
+                    <div class="gap-5 hover:text-slate-700  w-32 h-fit rounded-full flex text-white items-center font-semibold"> 
+                           <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" fill="currentColor" class="bi bi-house-door-fill text-white" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                      </svg>
+                      <a href="xhome.html" class="text-lg cursor-pointer">Home</a>
+                    </div>
+                    <div class="flex gap-5 hover:text-slate-700 w-32 h-fit rounded-full text-white items-center font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                      <a href="explore.html" class="text-lg cursor-pointer">Explore</a>
+                    </div>
+                    <div class="flex gap-5 cursor-pointer hover:text-slate-700 text-white items-center font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor" class="bi bi-bell-fill text-white" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                      </svg>
+                      <a href="notification.html" class="text-lg">Notifications</a>
+                    </div>
+                    <div id="messageToggle" class="flex gap-5 cursor-pointer hover:text-slate-700 text-white items-center font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor" class="bi bi-envelope text-white" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                          </svg>
+                          <h1 class="text-lg">Messages</h1>
+                    </div>
+                    <div class="w-fit gap-5 hover:text-slate-700 flex cursor-pointer text-white items-center font-bold">
+                        <img src="asset/Grok Ai.png" style="width: 32px;" alt="">
+                        <a href="GeminiAI.html" class="text-lg">Gemini AI</a>
+                    </div>
+                    <div class="flex gap-5 hover:text-slate-700 cursor-pointer text-white items-center font-semibold">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor" class="bi bi-people-fill text-white" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                      </svg>
+                      <h1 class="text-lg">Communities</h1>
+                    </div>
+                    <div class="flex hover:text-slate-700 gap-5 cursor-pointer text-white items-center font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor" class="bi bi-person-fill text-white" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                          </svg>
+                          <a href="profile.html" class="text-lg">Profile</a>
+                    </div>
+                    <div class="flex gap-5 cursor-pointer hover:text-slate-700 text-white items-center font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="currentColor" class="bi bi-info-circle-fill text-white" viewBox="0 0 16 16">
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                          </svg>
+                          <h1 class="text-lg">More</h1>
+                    </div>
+                    <div><button class="bg-blue-500 w-60 hover:bg-blue-300 text-white shadow-sm font-bold h-14 rounded-full">Post</button></div>
+
+                </div>
+                <div id="logOut" class=" gap-2 hidden  w-64 text-white text-xl font-semibold shadow shadow-white flex-col h-24 bg-black rounded-2xl absolute ml-5">
+                    <div class="hover:bg-slate-700 px-2 w-full">Add an existing account</div>
+                    <a href="index.html" class="hover:bg-slate-700 w-full px-2">Log out</a>
+
+                </div>
+                <div onclick="myProfile(event)" class=""><button class="bg-black hover:bg-slate-700 cursor-pointer shadow-sm flex w-72 text-white font-bold mt-16 ml-12  h-14 rounded-full">
+                <div class="flex w-full h-full items-center px-3">
+                    <div class="u-profile-img bg-blue-950 w-11 h-11 rounded-full"></div>
+                    <div class="u-names flex flex-col pl-4 text-white">
+                        <div class="text-white text-left">Kruzzz</div>
+                        <div class="text-slate-600 font-normal">@Fabuloustimsam</div>
+                    </div>
+                    <div class="options items-center flex pl-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-three-dots text-white" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                          </svg>
+                    </div>
+                </div>    
+                </button></div>
+                                
+            </div>
+            <div id="GhamburgerMenu" onclick="GhamBurger()" class="hamburger py-3 sm:hidden px-2 max-md:block text-white">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+
+            <section class="w-full z-0">
+                <div class="px-5 bg py-4 justify-center w-full h-screen">
+                    
+                    <div class="text-white flex flex-col justify-center gap-10 text-center">
+                        <div class="text-4xl  font-semibold">Introducing Your Personal AI Assitant</div>
+                        <div class="text-9xl bg-black border-t font-bold font-serif shadow-white rounded-full shadow-2xl">Gemini</div>
+                        <div class="text-3xl font-semibold">Welcome to KORE’s AI-Powered Experience</div>
+                        <div class="text-xl font-semibold">Curious about the origin of a trending topic on KORE Trends? No need to stress—Gemini has you covered! Just ask Gemini anything you'd like to know about a trend, and let the insights come to you while you Sit back and stay informed effortlessly. </div>
+                        <div><button class="text-white px-8 py-4 items-center rounded-full shadow-md shadow-white hover:bg-blue-300 font-bold bg-blue-500">Get Started</button></div>
+                    </div>
+                    
+                </div>
+            </section>
+        
+
+    </section>
+
+    
+</body>
+<script src="main.js"></script>
+<script src="message.js"></script>
+<script src="hamburger.js"></script>
+</html>
