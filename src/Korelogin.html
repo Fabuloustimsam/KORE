@@ -79,6 +79,7 @@
                                         Login
                                     </button>
                                     <div id="errorMessage" class="text-red-800 font-extrabold"></div>
+                                    <div id="ForgetBassword" class=" text-white cursor-pointer font-bold underline"></div>
                                 </form>
                                 <p class="mt-4 text-center text-sm text-black">
                                     Don't have an account? <a href="signup.html"
@@ -134,11 +135,13 @@
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const errorMessageElement = document.getElementById('errorMessage');
+        const forget = document.getElementById('ForgetBassword')
 
         if (email === 'Fabulekore@gmail.com' && password === 'Admin') {
             window.location.href = 'index.html';
         } else {
             errorMessageElement.innerHTML = 'Invalid credentials. Please try again.';
+            forget.innerHTML = "forget password??";
         }
     });
 </script>
