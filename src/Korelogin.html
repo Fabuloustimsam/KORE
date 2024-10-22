@@ -81,6 +81,7 @@
                                         class="font-semibold shadow-lg hover:bg-blue-600 w-60 h-11 bg-blue-400 rounded-full">
                                         Login
                                     </button>
+                                    <div id="errorMessage" class="text-red-800"></div>
                                 </form>
                                 <p class="mt-4 text-center text-sm text-gray-600">
                                     Don't have an account? <a href="signup.html"
@@ -135,10 +136,12 @@
         e.preventDefault();
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
+        const errorMessageElement = document.getElementById('errorMessage');
+
         if (email === 'Fabulekore@gmail.com' && password === 'Admin') {
             window.location.href = 'index.html';
         } else {
-            alert('Invalid credentials. Please try again.');
+            errorMessageElement.innerHTML = 'Invalid credentials. Please try again.';
         }
     });
 </script>
