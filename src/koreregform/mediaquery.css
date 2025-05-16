@@ -1,0 +1,26 @@
+@media(max-width: 1024px) {
+  .email{
+    width: 21em;
+    padding-right: unset !important;
+    margin: 1rem 15px;
+  }
+  
+  
+}
+@media only screen and (max-width: 767px) {
+  .details-info{
+    margin: 1rem 15px;}
+  .firstname{
+    width: 21em;
+    padding-right: unset !important;
+  }
+  .email{
+    width: 21em;
+    padding-right: unset !important;
+    margin: 1rem 15px;
+  }
+  .DOB{
+    gap: 15px !important;
+  }
+ 
+} 
